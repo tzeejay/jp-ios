@@ -13,6 +13,7 @@
 		23F7DB3B1FE7099F00481177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F7DB3A1FE7099F00481177 /* Assets.xcassets */; };
 		23F7DB3E1FE7099F00481177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F7DB3C1FE7099F00481177 /* LaunchScreen.storyboard */; };
 		23F7DB411FE7099F00481177 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F7DB401FE7099F00481177 /* main.m */; };
+		23F7DB491FE70CE900481177 /* NetworkingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F7DB481FE70CE900481177 /* NetworkingHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		23F7DB3D1FE7099F00481177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23F7DB3F1FE7099F00481177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23F7DB401FE7099F00481177 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		23F7DB471FE70CE900481177 /* NetworkingHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkingHelper.h; sourceTree = "<group>"; };
+		23F7DB481FE70CE900481177 /* NetworkingHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkingHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				23F7DB321FE7099F00481177 /* AppDelegate.m */,
 				23F7DB341FE7099F00481177 /* ViewController.h */,
 				23F7DB351FE7099F00481177 /* ViewController.m */,
+				23F7DB471FE70CE900481177 /* NetworkingHelper.h */,
+				23F7DB481FE70CE900481177 /* NetworkingHelper.m */,
 				23F7DB371FE7099F00481177 /* Main.storyboard */,
 				23F7DB3A1FE7099F00481177 /* Assets.xcassets */,
 				23F7DB3C1FE7099F00481177 /* LaunchScreen.storyboard */,
@@ -102,7 +107,7 @@
 				TargetAttributes = {
 					23F7DB2D1FE7099F00481177 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -143,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23F7DB361FE7099F00481177 /* ViewController.m in Sources */,
+				23F7DB491FE70CE900481177 /* NetworkingHelper.m in Sources */,
 				23F7DB411FE7099F00481177 /* main.m in Sources */,
 				23F7DB331FE7099F00481177 /* AppDelegate.m in Sources */,
 			);
@@ -278,12 +284,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "JP-Zeiten/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tzeejay.JP-Zeiten";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -291,12 +299,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "JP-Zeiten/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tzeejay.JP-Zeiten";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

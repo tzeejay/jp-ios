@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NetworkingHelper.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property IBOutlet UITableView *table;
 
 
 @end
